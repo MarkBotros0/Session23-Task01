@@ -1,7 +1,7 @@
 import { OPEN_MODAL } from "./modalTypes";
 import { CLOSE_MODAL } from "./modalTypes";
 
-export const openModal = (movie) => {
+export const openModal = (movie = {}) => {
     return {
         type: OPEN_MODAL,
         payload: movie
