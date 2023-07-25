@@ -9,21 +9,19 @@
         font-size: 27px;
         margin: 0;
     }
-    h3{
+
+    h3 {
         font-size: 14px;
-        margin: 0; 
+        margin: 0;
     }
 
     .stats {
         border: solid rgb(196, 196, 196) 1px;
         padding: 8px;
         margin-top: 30px;
+        border-radius: 10px;
     }
 }
-
-
-
-
 
 .main {
 
@@ -56,19 +54,43 @@
         .card {
             background-color: white;
             cursor: pointer;
+            overflow: hidden;
+
+            .item {
+                overflow: hidden;
+
+                img {
+                    -webkit-transition: 0.8s ease;
+                    transition: 0.8s ease;
+                }
+            }
         }
 
         .card:hover {
             background-color: #d6d4d488;
+            overflow: hidden;
+
+            .item {
+                img {
+                    -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+            }
         }
     }
+
     .myBtn {
         color: black;
         border: black 1px solid;
-        padding: 5px 15px ;
+        padding: 5px 15px;
         font-size: 20px;
         background-color: white;
         border-radius: 5px;
+    }
+
+    .myBtn:hover {
+        background-color: black;
+        color: white;
     }
 }
 
@@ -88,13 +110,12 @@
         background-color: white;
         margin: 10% auto;
         position: relative;
-
+        border-radius: 10px;
 
         #close-btn {
-            color: #d4d4d4;
-            padding: 5px;
+            color: #000000;
             position: absolute;
-            top: -40px;
+            top: 10px;
             right: 10px;
             cursor: pointer;
             font-size: 22px;
@@ -112,26 +133,36 @@
             font-size: 32px;
             font-weight: 400;
         }
-        h3{
+
+        h3 {
             font-size: 20px;
             color: #6e6e6e;
             font-weight: 400;
         }
+
         .content-wrapper {
             padding: 0 20px;
         }
     }
 }
+
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,14 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import modalReducer from './modal/modalSlice'
-import pageReducer from './page/pageSlice'
 import moviesReducer from './movies/moviesSlice'
+import pageReducer from './page/pageSlice'
 
-export const store = configureStore({
+const store = configureStore({
     reducer: {
-        page: pageReducer,
         modal: modalReducer,
-        movies: moviesReducer
-    }
-})
+        movies: moviesReducer,
+        page: pageReducer,
+    },
+});
 
-export default store
+export default store;

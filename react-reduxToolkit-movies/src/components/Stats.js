@@ -11,9 +11,9 @@ const Stats = () => {
         <div className="header">
             <div className="container mb-3">
                 <div className="row align-items-end ">
-                    <h1 className="col-auto me-4">Movies</h1>
+                    <h1 className="col-auto me-4 mt-3">Movies Guide</h1>
                 </div>
-                <div className="row  stats">
+                <div className="row  stats mx-1">
                     <h2 className="mb-2">Stats</h2>
                     <h3 className="mb-2 curr-page">Current Page: {page}</h3>
                     <h3 className="mb-2 number">Number of Movies: {movies.length}</h3>
